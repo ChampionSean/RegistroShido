@@ -1,0 +1,78 @@
+body{
+    font-family: arial;
+    line-height: 1.5em;
+    margin: 0 0;
+}
+
+h1{
+    background-color: black;
+    color:white;
+    margin: 0 0;
+    padding: 0.25em 0;
+    padding-left: 20px;
+}
+
+h1 img{
+    display: inline-block;
+    height: 2.5em;
+    padding-right: 0.5em;
+    vertical-align: middle;
+}
+
+form, body > div{
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+form{
+    margin: 2em auto 1em auto;
+}
+
+body > div{
+    margin: 1em auto;
+}
+
+.campo_formulario{
+    margin: 1em 0;
+    text-align: center;
+}
+
+label{
+    display: inline-block;
+    text-align: left;
+}
+
+input,button{
+    display: inline-block;
+    line-height: 2em;
+}
+
+select{
+    padding: 0.5em 0;
+}
+
+button{
+    margin: 1em 0 1em 0;
+}
+
+a{
+    display: block;
+    margin: 0 0 1em 0;
+    color: blue;
+}
+
+a img{
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 1em;
+}
+
+.col1-2{
+    width: 16%;
+}
+
+.col2-2{
+    width: 49%;
+}

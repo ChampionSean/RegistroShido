@@ -1,0 +1,84 @@
+body{
+    font-family: arial;
+    line-height: 1.5em;
+    margin: 0 0;
+}
+
+input , select, button{
+    padding: 4px 0;
+    display: inline-block;
+}
+
+#titulo{
+    background-color: black;
+    color:white;
+    margin: 0 0;
+    padding: 1em 0;
+    padding-left: 20px;
+    text-align: left;
+}
+
+h1{
+    text-align: center;
+}
+
+#busqueda{
+    margin-top: 1em;
+    padding-left: 1em;
+}
+
+#busqueda input, #busqueda #carrera{
+    margin-top: 1em;
+    width: 20%;
+}
+
+#tipo_busqueda{
+    width: 20%;
+}
+
+button{
+    width: 10%;
+}
+
+#carrera{
+    display: none;
+}
+
+table{
+    margin-top: 2em;
+    width: 95%;
+    margin: 0 auto;
+}
+
+tr{
+    line-height: 2em;
+}
+
+th{
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+a{
+    display: block;
+    position: fixed; 
+    line-height: 2em;
+    right: 1em;
+    bottom: 5em;
+    padding: 0.5em 0.5em;
+    color: #003300;
+    border-radius: 3px;
+    background-color: #00cc00;
+}
+
+a:active{
+     background-color: #009900;
+}
+
+
+
+
+
