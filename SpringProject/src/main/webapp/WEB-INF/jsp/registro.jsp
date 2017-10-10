@@ -19,6 +19,7 @@
      </head>
 
   <body>
+     
   	  
     <div class="wrapper">
 	<div class="container">
@@ -97,7 +98,7 @@
             <script src="<c:url value="js/jquery.md5.js" /> "></script>
 
 
-
+  
       <script>
 
          function revisarCodigoVacio(elemento) {
@@ -371,6 +372,7 @@
       });
       
       $('#boton2').click(function(){
+        
         var doc = new jsPDF();
         var expresion =/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
         var expresion2 = /^([0-9])*$/;
@@ -415,17 +417,31 @@
          doc.text(9, 110, $('#apellidos').val());
          doc.setFontSize(12);
          doc.text(9, 116, fuu11);
-         doc.output('dataurlnewwindow');
+         
+         var string =doc.output('datauristring');
+         var iframe = "<iframe width='100%' height='100%' src='" + string + "'></iframe>"
+         var x = window.open();
+         x.document.open();
+         x.document.write(iframe);
+         x.document.close();
+        
          document.nombreDelFormulario.method = "post";
          document.nombreDelFormulario.submit();  
-         }else  { 
+      
+          }else  { 
          doc.setFontSize(17);
          doc.text(9, 103, $('#nombre').val());
          doc.setFontSize(17); 
          doc.text(9, 110, $('#apellidos').val());
          doc.setFontSize(12);
          doc.text(9, 116, $('#empresa').val());
-         doc.output('dataurlnewwindow');
+           var string =doc.output('datauristring');
+         var iframe = "<iframe width='100%' height='100%' src='" + string + "'></iframe>"
+         var x = window.open();
+         x.document.open();
+         x.document.write(iframe);
+         x.document.close();
+         
          document.nombreDelFormulario.method = "post";
          document.nombreDelFormulario.submit();
           //doc.output('save');
