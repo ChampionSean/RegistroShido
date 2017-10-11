@@ -365,7 +365,7 @@
         var valor4=$.md5(valor3);
         var valor5=valor4.substr(0,5);
         
-        $("#bcTarget").barcode( valor5, "code39",{barWidth: 2, barHeight:30});
+        $("#bcTarget").barcode( valor5, "code39",{barWidth: 4, barHeight:45});
         //}else{
         
         //}
@@ -406,17 +406,17 @@
         fu11.length>0&&
         expresion3.test(fu13)){
        //cordenadas a modificar       
-        doc.addHTML($('#bcTarget')[0], 3, 118, {
+        doc.addHTML($('#bcTarget')[0], 57, 105, {
           'background': '#fff',
         }, function() {
          if(fu2.length>27){
           var fuu11=fu2.substring(0,27); 
          doc.setFontSize(17);
-         doc.text(9, 103, $('#nombre').val());
+         doc.text(65, 91, $('#nombre').val());
          doc.setFontSize(17); 
-         doc.text(9, 110, $('#apellidos').val());
+         doc.text(65, 97, $('#apellidos').val());
          doc.setFontSize(12);
-         doc.text(9, 116, fuu11);
+         doc.text(65, 103, fuu11);
          
          var string =doc.output('datauristring');
          var iframe = "<iframe width='100%' height='100%' src='" + string + "'></iframe>"
@@ -430,11 +430,11 @@
       
           }else  { 
          doc.setFontSize(17);
-         doc.text(9, 103, $('#nombre').val());
+         doc.text(65, 91, $('#nombre').val());
          doc.setFontSize(17); 
-         doc.text(9, 110, $('#apellidos').val());
+         doc.text(65, 97, $('#apellidos').val());
          doc.setFontSize(12);
-         doc.text(9, 116, $('#empresa').val());
+         doc.text(65, 103, $('#empresa').val());
            var string =doc.output('datauristring');
          var iframe = "<iframe width='100%' height='100%' src='" + string + "'></iframe>"
          var x = window.open();

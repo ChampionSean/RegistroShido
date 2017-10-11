@@ -30,7 +30,7 @@
 
 
                 <form name="nombreDelFormulario" class="form">
-                    <img id="imagen" src="<c:url value="/imagenes/Logo2.png" />" width="450" height="150">
+                    <img id="imagen" src="<c:url value="/imagenes/Logo2.jpg" />" width="560" height="225">
                     <input type="search" placeholder="numero" list="numeros" name="cuenta" id="numero" onblur="revisarnumero(this)">
                     <datalist id="numeros">
                          <c:forEach var="pre" items="${pres}">
