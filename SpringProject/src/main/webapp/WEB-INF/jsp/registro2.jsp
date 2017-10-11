@@ -409,9 +409,9 @@
         }, function() {
          if(fu2.length>=27){
          var fuu11=fu2.substring(0,27); 
-         doc.setFontSize(19);
+         doc.setFontSize(21);
          doc.text(65, 89, $('#nombre').val().toUpperCase());
-         doc.setFontSize(19); 
+         doc.setFontSize(21); 
          doc.text(65, 97, $('#apellidos').val().toUpperCase());
          doc.setFontSize(13);
          doc.text(66, 103, fuu11.toUpperCase());
@@ -427,9 +427,9 @@
          document.nombreDelFormulario.submit();  
      
         }else  { 
-         doc.setFontSize(19);
+         doc.setFontSize(21);
          doc.text(65, 89, $('#nombre').val().toUpperCase());
-         doc.setFontSize(19); 
+         doc.setFontSize(21); 
          doc.text(65, 97, $('#apellidos').val().toUpperCase());
          doc.setFontSize(13);
          doc.text(66, 103, $('#empresa').val().toUpperCase());
