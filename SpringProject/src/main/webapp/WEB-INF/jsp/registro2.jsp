@@ -362,7 +362,7 @@
         var valor3=valor6+valor2;
         var valor4=$.md5(valor3);
         var valor5=valor4.substr(0,5);
-        $("#bcTarget").barcode( valor5, "code39",{barWidth: 4, barHeight:45});
+        $("#bcTarget").barcode( valor5, "code39",{barWidth: 4, barHeight:40});
         //}else{
         
        // }
@@ -409,12 +409,12 @@
         }, function() {
          if(fu2.length>=27){
          var fuu11=fu2.substring(0,27); 
-         doc.setFontSize(17);
-         doc.text(65, 91, $('#nombre').val());
-         doc.setFontSize(17); 
-         doc.text(65, 97, $('#apellidos').val());
-         doc.setFontSize(12);
-         doc.text(65, 103, fuu11);
+         doc.setFontSize(19);
+         doc.text(65, 89, $('#nombre').val().toUpperCase());
+         doc.setFontSize(19); 
+         doc.text(65, 97, $('#apellidos').val().toUpperCase());
+         doc.setFontSize(13);
+         doc.text(66, 103, fuu11.toUpperCase());
         
          var string =doc.output('datauristring');
          var iframe = "<iframe width='100%' height='100%' src='" + string + "'></iframe>"
@@ -427,12 +427,12 @@
          document.nombreDelFormulario.submit();  
      
         }else  { 
-         doc.setFontSize(17);
-         doc.text(65, 91, $('#nombre').val());
-         doc.setFontSize(17); 
-         doc.text(65, 97, $('#apellidos').val());
-         doc.setFontSize(12);
-         doc.text(65, 103, $('#empresa').val());
+         doc.setFontSize(19);
+         doc.text(65, 89, $('#nombre').val().toUpperCase());
+         doc.setFontSize(19); 
+         doc.text(65, 97, $('#apellidos').val().toUpperCase());
+         doc.setFontSize(13);
+         doc.text(66, 103, $('#empresa').val().toUpperCase());
        
          var string =doc.output('datauristring');
          var iframe = "<iframe width='100%' height='100%' src='" + string + "'></iframe>"
