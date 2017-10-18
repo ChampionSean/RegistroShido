@@ -31,7 +31,7 @@
 		
 		
 		<form class="form">
-			 <img id="imagen" src="<c:url value="/imagenes/Logo3.png" /> " width="450" height="150">
+			 <img id="imagen" src="<c:url value="/imagenes/Logo2.jpg" /> " width="450" height="150">
 			<input type="text" value="Registrados = ${numero}" readonly>
 			<input type="search" placeholder="buscar" list="doe">
                         <datalist id="doe">

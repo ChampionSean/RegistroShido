@@ -27,7 +27,7 @@
  
      
                 <form action="/SpringProject/registrarEdi" class="form" name="nombreDelFormulario">
-      <img id="imagen" src="<c:url value="/imagenes/Logo3.png" /> " width="450" height="150">
+      <img id="imagen" src="<c:url value="/imagenes/Logo2.jpg" /> " width="450" height="150">
       <input name="id" id="caja" value="${objeto.orderr}" type="text" readonly>
         <p id="nombreP">NOMBRE:</p><input name="nombre" value="${objeto.nombre}" type="text" placeholder="Nombre(s)" id="nombre" onblur=" revisarNombreVacio(this); revisarnombre(this);">
       <p id="apellidosP">APELLIDOS:</p><input value="${objeto.apellido}" name="apellido" type="text" placeholder="Apellidos" id="apellidos" onblur="revisarApellidosVacio(this); revisarapellidos(this)">
@@ -356,7 +356,7 @@
         //var expresion = /^([0-9])*$/;
         //var fu = $("#barras").val();
         //if(expresion.test(fu)){
-                var correoS=document.getElementById("correo").value;
+        var correoS=document.getElementById("correo").value;
         var cajaS=document.getElementById("caja").value;
         var valor1=String(correoS);
         var valor6=valor1.toLowerCase();
@@ -406,17 +406,17 @@
         fu11.length>0&&
         expresion3.test(fu13)){
        //cordenadas a modificar       
-        doc.addHTML($('#bcTarget')[0], 57, 105, {
+        doc.addHTML($('#bcTarget')[0], 57, 115, {
           'background': '#fff',
         }, function() {
          if(fu2.length>27){
           var fuu11=fu2.substring(0,27); 
          doc.setFontSize(21);
-         doc.text(65, 89, $('#nombre').val().toUpperCase());
+         doc.text(65, 100, $('#nombre').val().toUpperCase());
          doc.setFontSize(21); 
-         doc.text(65, 97, $('#apellidos').val().toUpperCase());
+         doc.text(65, 108, $('#apellidos').val().toUpperCase());
          doc.setFontSize(13);
-         doc.text(66, 103, fuu11.toUpperCase());
+         doc.text(66, 113, fuu11.toUpperCase());
          
          var string =doc.output('datauristring');
          var iframe = "<iframe width='100%' height='100%' src='" + string + "'></iframe>"
@@ -430,11 +430,11 @@
       
           }else  { 
          doc.setFontSize(21);
-         doc.text(65, 89, $('#nombre').val().toUpperCase());
+         doc.text(65, 100, $('#nombre').val().toUpperCase());
          doc.setFontSize(21); 
-         doc.text(65, 97, $('#apellidos').val().toUpperCase());
+         doc.text(65, 108, $('#apellidos').val().toUpperCase());
          doc.setFontSize(13);
-         doc.text(66, 103, $('#empresa').val().toUpperCase());
+         doc.text(66, 113, $('#empresa').val().toUpperCase());
            var string =doc.output('datauristring');
          var iframe = "<iframe width='100%' height='100%' src='" + string + "'></iframe>"
          var x = window.open();
